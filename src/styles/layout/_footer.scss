@@ -1,0 +1,18 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as mx;
+
+.footer {
+  background-color: v.$color_primario;
+
+  &__info {
+    margin: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p,a {
+      color: v.$negro;
+      font-size: 1.4rem;
+    }
+  }
+}

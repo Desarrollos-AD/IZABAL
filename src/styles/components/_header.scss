@@ -1,0 +1,31 @@
+@use "../base/_variables.scss" as v;
+@use "../base/mixins" as mx;
+
+.header {
+  display: flex;
+  gap: 5rem;
+  flex-direction: column;
+
+  @include mx.tablet-pequena {
+    flex-direction: row;
+  }
+  &__column {
+    &--info {
+      h1,
+      h2 {
+        color: v.$negro;
+        font-weight: v.$delgada;
+        text-align: left;
+      }
+    }
+    &--img {
+      img {
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}

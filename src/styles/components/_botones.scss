@@ -1,0 +1,10 @@
+@use "../base/_variables.scss" as v;
+@use "../base/mixins" as mx;
+
+.btn_verde {
+  @include mx.boton(v.$color_primario, inline-block, 1rem, v.$blanco);
+  &:hover {
+    background-color: v.$color_terciario;
+    transition: background-color 0.7s ease;
+  }
+}
