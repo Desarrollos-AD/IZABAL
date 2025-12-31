@@ -1,0 +1,35 @@
+@use "../base/_variables.scss" as v;
+@use "../base/mixins" as mx;
+
+.servicios {
+  &__cards {
+    @include mx.grid(1, 2.5rem);
+    margin: 1rem;
+    @include mx.telefono-mediano {
+      @include mx.grid(2, 2.5rem);
+    }
+    @include mx.telefono-grande {
+      @include mx.grid(3, 2.5rem);
+    }
+    
+    &--card {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      border-radius: 1rem;
+      .card {
+        img {
+          object-fit: cover;
+        }
+        &__body {
+          h4 {
+            color: v.$color_terciario;
+          }
+          a {
+            margin: 2rem 2rem 2rem 0;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
