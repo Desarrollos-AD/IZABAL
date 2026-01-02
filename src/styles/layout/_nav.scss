@@ -50,6 +50,7 @@
   align-items: center;
   gap: 8px;
   transition: 0.4s;
+  color: v.$gris_texto;
 }
 
 .header__list-item > a svg path {
@@ -96,8 +97,8 @@
 @media (hover: hover) and (pointer: fine) {
   .header__list-item:hover > a,
   .header__list-item:hover > a svg path {
-    color: var(--color-primary);
-    fill: var(--color-primary);
+    color:v.$negro;
+    fill: v.$negro;;
   }
 }
 
@@ -124,7 +125,7 @@
     top: 110%;
     left: 0;
     padding: 20px;
-    background-color: rgb(221, 255, 210);
+    background-color: v.$color_primario;
     border-radius: 20px;
     opacity: 0;
     visibility: hidden;
@@ -160,15 +161,13 @@
     }
   }
 
-  .header__list-item.active a,
-  .header__list-item.active a > svg path {
-    fill: red;
-    color: red;
-  }
-
   .submenu-list {
     width: 100%;
     max-width: 100%;
     gap: 5px;
   }
+}
+
+.nav__item.activo{
+  color: v.$negro;
 }

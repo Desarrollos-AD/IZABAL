@@ -58,21 +58,17 @@
   @include mx.telefono-grande {
     flex-direction: row;
   }
-
-  &__mision {
-    background-color: v.$color_secundario;
-  }
-  &__vision {
-    background-color: v.$color_terciario;
-  }
   &__mision,
   &__vision {
     flex: 1;
+    margin: 1rem;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+    background-color: v.$blanco;
     border-radius: 2rem;
 
     &--img {
       width: 80%;
-      background-color: v.$blanco;
       margin: 0 auto;
       padding: 2rem;
       border-radius: 2rem;
@@ -91,7 +87,7 @@
 
       h2 {
         margin: 0;
-        color: v.$blanco;
+        color: v.$color_primario;
       }
     }
   }
@@ -102,12 +98,12 @@
   margin-top: 5rem;
   &__contenido {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     gap: 5rem;
-
     
     @include mx.telefono-mediano {
+      flex-direction: row;
       margin-top: 0rem;
     }
 

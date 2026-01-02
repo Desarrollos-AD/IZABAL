@@ -17,13 +17,13 @@
         color: v.$negro;
         font-weight: v.$delgada;
         text-align: left;
-        font-size: clamp(2vw, 2.5vw, 3rem);
+        font-size:  clamp(4.5rem, 5.5vw, 6.5rem);
       }
       h2 {
         color: v.$negro;
         font-weight: v.$delgada;
         text-align: left;
-        font-size: clamp(1.4vw, 1.6vw, 1.8rem);
+        font-size: 3rem;
       }
     }
     &--img {
