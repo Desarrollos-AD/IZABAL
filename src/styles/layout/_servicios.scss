@@ -2,13 +2,12 @@
 @use "../base/mixins" as mx;
 
 .header__servicios {
-  @include mx.imgFondo("../../../public/img/serviciosHeader.jpg");
+  @include mx.imgFondo("/img/serviciosHeader.jpg");
 }
 .servicios {
   display: flex;
   gap: 2.5rem;
-  margin-bottom: 5rem;
-
+  margin: 5rem 1rem 1rem 1rem;
   flex-direction: column;
 
   @include mx.telefono-grande {
@@ -23,9 +22,6 @@
 
     h4 {
       color: v.$color_primario;
-    }
-
-    &--botones {
     }
   }
 

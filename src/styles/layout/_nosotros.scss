@@ -2,7 +2,7 @@
 @use "../base/mixins" as mx;
 
 .header__nosotros {
-  @include mx.imgFondo("../../../public/img/nosotros.jpg");
+  @include mx.imgFondo("/img/nosotros.jpg");
 }
 
 .nosotros {

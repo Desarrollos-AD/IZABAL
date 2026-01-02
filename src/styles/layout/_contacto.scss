@@ -2,7 +2,7 @@
 @use "../base/mixins" as mx;
 
 .header {
-  @include mx.imgFondo("../../../public/img/contacto.jpg");
+  @include mx.imgFondo("/img/contacto.jpg");
 
   &__fondo {
     background: -webkit-linear-gradient(
