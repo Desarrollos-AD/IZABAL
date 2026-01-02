@@ -1,0 +1,33 @@
+@use "../base/_variables.scss" as v;
+@use "../base/mixins" as mx;
+
+.btn_verde {
+  @include mx.boton(v.$color_primario, inline-block, 1rem, v.$blanco);
+  &:hover {
+    background-color: v.$color_terciario;
+    transition: background-color 0.7s ease;
+  }
+}
+.btn_verde--blanco {
+  @include mx.boton(v.$color_primario, block, 0.5rem, v.$blanco);
+  &:hover {
+    background-color: v.$color_terciario;
+    transition: background-color 0.7s ease;
+  }
+}
+.btn_verde--blanco {
+  @include mx.boton(v.$color_secundario, block, 0.5rem, v.$blanco);
+  &:hover {
+    background-color: v.$color_terciario;
+    transition: background-color 0.7s ease;
+  }
+}
+
+.btn__servicios {
+  @include mx.boton(v.$color_primario, block, .5rem, v.$blanco);
+  width: 95%;
+  margin: 1rem;
+
+       
+}
+

@@ -1,0 +1,66 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as mx;
+
+.header__servicios {
+  @include mx.imgFondo("/img/serviciosHeader.jpg");
+}
+.servicios {
+  display: flex;
+  gap: 2.5rem;
+  margin: 5rem 1rem 1rem 1rem;
+  flex-direction: column;
+
+  @include mx.telefono-grande {
+    flex-direction: row;
+  }
+  &__servicio,
+  &__menu {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 1rem;
+    padding: 2.5rem 0rem;
+
+    h4 {
+      color: v.$color_primario;
+    }
+  }
+
+  &__menu {
+    flex: 1;
+  }
+
+  &__servicio {
+    flex: 2;
+    &--section {
+      display: none;
+
+      h3 {
+        margin: 0 0 1.5rem 0;
+      }
+      p {
+        margin: 2rem 0;
+      }
+
+      .servicios__info {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+
+        &--des {
+          flex: 2;
+        }
+        &--item {
+          flex: 1;
+        }
+      }
+    }
+  }
+}
+
+.mostrar {
+  display: block;
+}
+.ocultar {
+  display: none;
+  visibility: hidden;
+}

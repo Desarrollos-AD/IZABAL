@@ -1,0 +1,76 @@
+---
+const { pathname } = Astro.url;
+---
+
+<section class="navbar">
+  <div class="contenedor">
+    <div class="header__wrapper">
+      <a href="/" class="header__logo">
+        <img loading="lazy" src="/img/logo.png" alt="Logo Izabal Consultoría" />
+      </a>
+      <div class="header__navigation-wrapper">
+        <nav class="header__navigation">
+          <ul class="header__list">
+            <li class="header__list-item">
+              <a
+                href="/"
+                class={`nav__item ${pathname === "/" ? "activo" : ""}`}
+              >
+                Inicio
+              </a>
+            </li>
+
+            <li class="header__list-item">
+              <a
+                href="/servicios"
+                class={`nav__item ${pathname.startsWith("/servicios") ? "activo" : ""}`}
+              >
+                Servicios
+              </a>
+            </li>
+
+            <li class="header__list-item">
+              <a
+                href="/nosotros"
+                class={`nav__item ${pathname === "/nosotros" ? "activo" : ""}`}
+              >
+                Nosotros
+              </a>
+            </li>
+
+            <li class="header__list-item">
+              <a
+                href="/contacto"
+                class={`nav__item ${pathname === "/contacto" ? "activo" : ""}`}
+              >
+                Contacto
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__burger"><i></i><i></i><i></i></div>
+    </div>
+  </div>
+</section>
+
+<script client:load>
+  // var items = document.querySelectorAll(".nav__item");
+  // items.forEach(function (item) {
+  //   if (item.href === window.location.href) {
+  //     item.classList.add("activo");
+  //   }
+  // });
+
+  window.addEventListener("DOMContentLoaded", () => {
+    const burger = document.querySelector(".header__burger");
+    const navWrapper = document.querySelector(".header__navigation-wrapper");
+
+    if (burger && navWrapper) {
+      burger.addEventListener("click", () => {
+        burger.classList.toggle("active");
+        navWrapper.classList.toggle("open");
+      });
+    }
+  });
+</script>

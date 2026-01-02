@@ -1,0 +1,159 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as mx;
+
+.header {
+  @include mx.imgFondo("/img/contacto.jpg");
+
+  &__fondo {
+    background: -webkit-linear-gradient(
+      90deg,
+      hsla(177, 75%, 59%, 0.6),
+      hsla(262, 74%, 72%, 0.6)
+    );
+    background: linear-gradient(
+      90deg,
+      hsla(177, 75%, 59%, 0.6),
+      hsla(262, 74%, 72%, 0.6)
+    );
+    position: absolute;
+    top: 0;
+    margin: 9.9rem 0;
+    left: 0;
+    width: 100%;
+    height: 65vh;
+    z-index: 1;
+  }
+  &__titulo,
+  &__subtitulo {
+    color: v.$blanco;
+    font-family: v.$fuente_principal;
+    height: 20vh;
+    position: relative;
+    z-index: 2;
+  }
+}
+.formulario {
+  width: auto;
+  height: auto;
+  margin: 5rem 0;
+  @include mx.grid(1, 0rem);
+  position: relative;
+  z-index: 20;
+  box-shadow: 0px 0px 37px -10px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 0px 0px 37px -10px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 0px 0px 37px -10px rgba(0, 0, 0, 0.43);
+  border-radius: 1rem;
+
+  @include mx.tablet-pequena {
+    @include mx.grid(2, 2rem);
+    margin: 5rem;
+  }
+
+  &__formas {
+    border-radius: 1rem 1rem 0 0;
+    background-color: v.$gris_oscuro;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 0 5rem 0;
+
+    @include mx.tablet-pequena {
+      border-radius: 1rem 0 0 1rem;
+    }
+
+    &--contacto {
+      margin-top: 5rem;
+
+      .contacto__item {
+        &--img {
+          width: 6rem;
+          height: 6rem;
+          background-color: v.$color_primario;
+          border-radius: 50%;
+          padding: 1rem;
+
+          img {
+          }
+        }
+      }
+    }
+
+    .contacto__item {
+      display: flex;
+      gap: 5rem;
+      align-items: center;
+      &--img {
+      }
+      &--des {
+        h4,
+        p {
+          text-align: left;
+        }
+      }
+    }
+
+    &__correo {
+      margin: 0 auto;
+      width: 100%;
+      background-color: v.$blanco;
+      border-radius: 0 1rem 0 1rem;
+
+      @include mx.tablet-pequena {
+        border-radius: 1rem 0 0 1rem;
+      }
+      &--item {
+        display: flex;
+        gap: 2rem;
+      }
+    }
+  }
+  h3 {
+    color: v.$color_secundario;
+    font-weight: v.$black;
+  }
+  &__correo {
+    background-color: v.$blanco;
+    .correo--item {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      @include mx.telefono-grande {
+        flex-direction: row;
+      }
+    }
+    .form__grupo {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem;
+      width: 100%;
+      @include mx.telefono-grande {
+        width: 48%;
+      }
+
+      input {
+        height: 3rem;
+        background-color: v.$gris_oscuro;
+        border: none;
+        border-radius: 0.5rem;
+        padding: 2rem;
+      }
+    }
+    .textarea {
+      display: flex;
+      flex-direction: column;
+      textarea {
+        border: none;
+        background-color: v.$gris_oscuro;
+        width: 100%;
+        height: 10rem;
+        padding: 2rem;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}
+.mapa {
+  width: 100%;
+  iframe {
+    width: 100%;
+  }
+}

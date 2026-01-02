@@ -1,0 +1,329 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/header.astro";
+---
+
+<Layout>
+  <header class="header__servicios">
+    <div class="contenedor">
+      <div class="header__contenedor">
+        <h1 class="header__titulo">Sobre Nosotros</h1>
+        <h2 class="header__subtitulo">
+          Transmitimos profesionalismo, respaldo técnico y enfoque estratégico.
+        </h2>
+      </div>
+      <div class="header__fondo"></div>
+    </div>
+  </header>
+
+  <section>
+    <div class="contenedor">
+      <div class="servicios">
+        <div class="servicios__menu">
+          <div class="contenedor">
+            <h4>Consultoría Financiera</h4>
+            <p>
+              Asesoría Financiera para mejorar los resultados de tu
+              organización.
+            </p>
+            <div class="servicios__menu--botones">
+              <button type="button" data-paso="1" class="btn__servicios active"
+                >Financieros
+              </button>
+              <button type="button" data-paso="2" class="btn__servicios"
+                >Contables</button
+              >
+              <button type="button" data-paso="3" class="btn__servicios"
+                >Empresariales</button
+              >
+              <button type="button" data-paso="4" class="btn__servicios"
+                >Legales</button
+              >
+              <button type="button" data-paso="5" class="btn__servicios"
+                >Ingeniería y Tecnología</button
+              >
+              <button type="button" data-paso="6" class="btn__servicios">
+                Investigación
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="servicios__servicio">
+          <div class="contenedor">
+            <div id="paso-1" class="servicios__servicio--section">
+              <h3>Servicios Financieros</h3>
+              <p>
+                <span>
+                  Mostrar especialización en banca, inversión y análisis
+                  financiero.
+                </span>
+              </p>
+
+              <div class="servicios__info">
+                <div class="servicios__info--des">
+                  <h4>Asesoría financiera</h4>
+                  <ul>
+                    <li>Análisis de inversión</li>
+                    <li>Acuerdos de inversión</li>
+                    <li>Análisis de datos de mercado</li>
+                    <li>Previsiones económicas</li>
+                  </ul>
+
+                  <h4>Banca hipotecaria</h4>
+                  <ul>
+                    <li>Financiación de vivienda</li>
+                    <li>Hipotecas comerciales</li>
+                  </ul>
+
+                  <h4>Crédito y deuda</h4>
+                  <ul>
+                    <li>Asistencia financiera</li>
+                    <li>Verificación de depósitos</li>
+                    <li>Negociación y reorganización de deuda</li>
+                    <li>Recuperación de cartera</li>
+                    <li>Relaciones con inversionistas</li>
+                    <li>Presupuestos financieros</li>
+                  </ul>
+                </div>
+                <div class="servicios__info--item">
+                  <img
+                    src="/img/servicios.png"
+                    loading="lazy"
+                    width="900"
+                    height="800"
+                    alt="Imagen Servicios"
+                  />
+                  <a href="contacto" class="btn_verde">Enviar Mensaje</a>
+                </div>
+              </div>
+            </div>
+            <div id="paso-2" class="servicios__servicio--section">
+              <h3>Servicios Contables</h3>
+              <p>
+                <span>
+                  Transmitir control, cumplimiento y orden financiero.
+                </span>
+              </p>
+
+              <div class="servicios__info">
+                <div class="servicios__info--des">
+                  <ul>
+                    <li>Gestión de obligaciones fiscales</li>
+                    <li>Contabilidad financiera y fiscal</li>
+                    <li>Control de costos</li>
+                    <li>Flujo monetario empresarial</li>
+                    <li>
+                      Cálculo de sueldos y salarios (ISR, IMSS, INFONAVIT)
+                    </li>
+                    <li>Control de inventarios</li>
+                    <li>Contabilidad electrónica</li>
+                  </ul>
+                </div>
+                <div class="servicios__info--item">
+                  <img
+                    src="/img/servicios.png"
+                    loading="lazy"
+                    width="900"
+                    height="800"
+                    alt="Imagen Servicios"
+                  />
+                  <a href="contacto" class="btn_verde">Enviar Mensaje</a>
+                </div>
+              </div>
+            </div>
+            <div id="paso-3" class="servicios__servicio--section">
+              <h3>Servicios Empresariales</h3>
+              <p>
+                <span>
+                  Posicionar a Izabal como aliado estratégico operativo.
+                </span>
+              </p>
+
+              <div class="servicios__info">
+                <div class="servicios__info--des">
+                  <h4>Gestión y administración</h4>
+                  <ul>
+                    <li>Asistencia personal y administrativa</li>
+                    <li>Administración de oficinas y archivos</li>
+                    <li>Gestión de proyectos</li>
+                    <li>Evaluación económica y financiera</li>
+                  </ul>
+
+                  <h4>Mercado y crecimiento</h4>
+                  <ul>
+                    <li>Análisis de mercado</li>
+                    <li>Estudios de mercado</li>
+                    <li>Inteligencia competitiva</li>
+                    <li>Ampliación comercial</li>
+                  </ul>
+
+                  <h4>Servicios complementarios</h4>
+                  <ul>
+                    <li>Renta de equipo audiovisual</li>
+                    <li>Arrendamiento de fotocopiadoras</li>
+                    <li>Programas de incentivos y reconocimiento</li>
+                  </ul>
+                </div>
+                <div class="servicios__info--item">
+                  <img
+                    src="/img/servicios.png"
+                    loading="lazy"
+                    width="900"
+                    height="800"
+                    alt="Imagen Servicios"
+                  />
+                  <a href="contacto" class="btn_verde">Enviar Mensaje</a>
+                </div>
+              </div>
+            </div>
+            <div id="paso-4" class="servicios__servicio--section">
+              <h3>Servicios Legales</h3>
+              <p>
+                <span>
+                  Respaldar seguridad jurídica y cumplimiento normativo.</span
+                >
+              </p>
+              <div class="servicios__info">
+                <div class="servicios__info--des">
+                  <ul>
+                    <li>Derecho mercantil</li>
+                    <li>Derecho inmobiliario</li>
+                    <li>Control de costos</li>
+                    <li>Derecho tributario</li>
+                    <li>Derecho laboral</li>
+                    <li>Investigación legal</li>
+                    <li>Servicios notariales</li>
+                    <li>Beneficios para empleados</li>
+                    <li>Propiedad y competencia</li>
+                  </ul>
+                </div>
+                <div class="servicios__info--item">
+                  <img
+                    src="/img/servicios.png"
+                    loading="lazy"
+                    width="900"
+                    height="800"
+                    alt="Imagen Servicios"
+                  />
+                  <a href="contacto" class="btn_verde">Enviar Mensaje</a>
+                </div>
+              </div>
+            </div>
+            <div id="paso-5" class="servicios__servicio--section">
+              <h3>Ingeniería y Tecnología</h3>
+              <p>
+                <span>
+                  Brindar soporte tecnológico y soluciones técnicas que
+                  fortalezcan la operación, control y eficiencia de los
+                  proyectos empresariales.
+                </span>
+              </p>
+              <div class="servicios__info">
+                <div class="servicios__info--des">
+                  <ul>
+                    <li>Administración de aplicaciones de software</li>
+                    <li>Gestión de cuentas en red</li>
+                    <li>Soporte tecnológico para proyectos</li>
+                  </ul>
+                </div>
+                <div class="servicios__info--item">
+                  <img
+                    src="/img/servicios.png"
+                    loading="lazy"
+                    width="900"
+                    height="800"
+                    alt="Imagen Servicios"
+                  />
+                  <a href="contacto" class="btn_verde">Enviar Mensaje</a>
+                </div>
+              </div>
+            </div>
+            <div id="paso-6" class="servicios__servicio--section">
+              <h3>Investigación</h3>
+              <p>
+                <span>
+                  Proporcionar análisis especializados que respalden decisiones
+                  financieras, empresariales y de inversión con base en datos
+                  confiables y metodologías técnicas.</span
+                >
+              </p>
+              <div class="servicios__info">
+                <div class="servicios__info--des">
+                  <ul>
+                    <li>Análisis macroeconómico</li>
+                    <li>Análisis microeconómico</li>
+                    <li>Econometría</li>
+                    <li>Previsiones económicas</li>
+                  </ul>
+                </div>
+                <div class="servicios__info--item">
+                  <img
+                    src="/img/servicios.png"
+                    loading="lazy"
+                    width="900"
+                    height="800"
+                    alt="Imagen Servicios"
+                  />
+                  <a href="contacto" class="btn_verde">Enviar Mensaje</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <Header />
+
+    <script is:client="load">
+      let paso = 1;
+
+      document.addEventListener("DOMContentLoaded", function () {
+        iniciarApp();
+      });
+
+      function iniciarApp() {
+        mostrarSeccion(); // Muestra y oculta las secciones
+        tabs(); // Cambia la sección cuando se presionen los tabs
+      }
+
+      function mostrarSeccion() {
+        // Ocultar la sección que tenga la clase de mostrar
+        const seccionAnterior = document.querySelector(".mostrar");
+        if (seccionAnterior) {
+          seccionAnterior.classList.remove("mostrar");
+        }
+
+        // Seleccionar la sección con el paso...
+        const pasoSelector = `#paso-${paso}`;
+        const seccion = document.querySelector(pasoSelector);
+        seccion.classList.add("mostrar");
+
+        // Quita la clase de actual al tab anterior
+        const tabAnterior = document.querySelector(".actual");
+        if (tabAnterior) {
+          tabAnterior.classList.remove("actual");
+        }
+
+        // Resalta el tab actual
+        const tab = document.querySelector(`[data-paso="${paso}"]`);
+        tab.classList.add("actual");
+      }
+
+      function tabs() {
+        // Agrega y cambia la variable de paso según el tab seleccionado
+        const botones = document.querySelectorAll(
+          ".servicios__menu--botones button"
+        );
+        botones.forEach((boton) => {
+          boton.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            paso = parseInt(e.target.dataset.paso);
+            mostrarSeccion();
+          });
+        });
+      }
+    </script>
+  </section>
+</Layout>

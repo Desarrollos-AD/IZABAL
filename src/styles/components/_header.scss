@@ -1,0 +1,40 @@
+@use "../base/_variables.scss" as v;
+@use "../base/mixins" as mx;
+
+.headerInicio {
+  display: flex;
+  gap: 5rem;
+  flex-direction: column;
+
+  @include mx.tablet-pequena {
+    flex-direction: row;
+  }
+  &__column {
+    &--info {
+      flex: 1;
+
+      h1 {
+        color: v.$negro;
+        font-weight: v.$delgada;
+        text-align: left;
+        font-size:  clamp(4.5rem, 5.5vw, 6.5rem);
+      }
+      h2 {
+        color: v.$negro;
+        font-weight: v.$delgada;
+        text-align: left;
+        font-size: 3rem;
+      }
+    }
+    &--img {
+      flex: 2;
+      img {
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}
